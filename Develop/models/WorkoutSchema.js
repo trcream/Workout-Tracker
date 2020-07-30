@@ -12,7 +12,7 @@ const workoutSchema = new Schema({
       type: {
         type: String,
         trim: true,
-        required: "Please enter a workout name.",
+        required: "Please enter a workout type.",
       },
 
       name: {
@@ -24,12 +24,12 @@ const workoutSchema = new Schema({
       duraton: {
         type: String,
         trim: true,
-        required: "Please enter a workout name.",
+        required: "Please enter a workout duration.",
       },
-      duration: Number,
       weight: Number,
       reps: Number,
       sets: Number,
+      distance: Number,
     },
   ],
 });
